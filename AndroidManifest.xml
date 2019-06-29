@@ -3449,6 +3449,15 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.aosip.owlsnest.advanced.SmartPixels" />
         </activity>
+
+        <!-- Gaming mode -->
+        <receiver android:name="com.havoc.settings.fragments.GamingModeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.GAMING_MODE_TURN_OFF" />
+                <action android:name="android.intent.action.GAMING_MODE_TURN_ON" />
+            </intent-filter>
+        </receiver>
+
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>
